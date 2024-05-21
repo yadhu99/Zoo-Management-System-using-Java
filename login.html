@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Management System - Login</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url(https://img.freepik.com/free-vector/blank-banner-rainforest-scene-with-wild-animals_1308-55669.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        /* Login form container */
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Title styles */
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Form label styles */
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Form control styles */
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        /* Button styles */
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Error message styles */
+        .error-message {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="title">WELCOME TO ZOOTOPIA</h1>
+        <form action="./Login" method="post" class="login-form">
+            <label for="username" class="form-label">Username:</label>
+            <input type="text" name="username" id="username" required class="form-control">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" name="password" id="password" required class="form-control">
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p id="error-message" class="error-message">Invalid username or password.</p>
+    </div>
+    <!-- <script>
+        const errorMessage = document.getElementById('error-message');
+
+        // Simulate an error on form submission (replace with your actual logic)
+        function simulateError(event) {
+            event.preventDefault();
+            errorMessage.style.display = 'block';
+        }
+
+        const form = document.querySelector('.login-form');
+        form.addEventListener('submit', simulateError);
+    </script> -->
+</body>
+</html>
+
